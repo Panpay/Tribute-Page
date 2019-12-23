@@ -1,0 +1,105 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navBar{
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navBar a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px;
+    margin: 1px;
+    text-align: center;
+    background: rgb(68, 68, 68);
+    color: white;
+    flex-grow: 1;
+}
+a:hover{
+    background-color: rgb(105, 104, 104);
+
+}
+
+.introPic{
+    background-image: url("../images/carbonfiber.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin: 0px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introPic h1{
+    margin: 0px;
+    font-size: 4em;
+}
+.mainbody{
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "text1 text2 text3"
+        "img text4 text4"
+        "img text5 text5"
+        "img text6 text6"
+        "text7 text8 text9";
+}
+.images{
+    width: 400px;
+    max-width: 100%;
+}
+
+.topics1{
+    grid-area: text1;
+}
+.topics2{
+    grid-area: text2;
+}
+.topics3{
+    grid-area: text3;
+}
+
+.sidelogo{
+    grid-area: img;
+}
+.section1{
+    grid-area: text4;
+}
+.section2{
+    grid-area: text5;
+}
+.section3{
+    grid-area: text6;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+}
+.topics1 p {
+    text-align: center;
+    font-weight: bold;
+}
+.topics2 p {
+    text-align: center;
+    font-weight: bold;
+}
+.topics3 p {
+    text-align: center;
+    font-weight: bold;
+}
